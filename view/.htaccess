@@ -1,0 +1,13 @@
+
+RewriteEngine on
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?gardenia\.estavela\.in\.rs
+RewriteRule ^(.*)$ https://www.gardenia.estavela.in.rs/$1 [R,L]
+
+RewriteOptions inherit
+RewriteCond %{HTTP_HOST} ^gardenia\.estavela\.in\.rs$ [OR]
+RewriteCond %{HTTP_HOST} ^www\vidime\.org$
+RewriteRule ^view\/?$ "https\:\/\/gardenia\.estavela\.in\.rs\/" [R=301,L]
+
+
+
