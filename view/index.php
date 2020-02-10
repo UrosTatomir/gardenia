@@ -5,8 +5,7 @@
     // $getpatient=isset($getpatient)?$getpatient:array();
     if(isset($_SESSION['user'])){
         $user=$_SESSION['user'];
-        $name=$_SESSION['user']['name'];
-        
+        $name=$_SESSION['user']['name'];    
     }
  ?>
 <DOCTYPE html>
